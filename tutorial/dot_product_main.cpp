@@ -13,8 +13,8 @@ int main(int argc, char *argv[]) {
 
   cryptoContext = dot_product__configure_crypto_context(cryptoContext, keyPair.secretKey);
 
-  std::vector<int16_t> arg0 = {1, 2, 3, 4, 5, 6, 7, 8};
-  std::vector<int16_t> arg1 = {2, 3, 4, 5, 6, 7, 8, 9};
+  std::vector<float> arg0 = {1, 2, 3, 4, 5, 6, 7, 8};
+  std::vector<float> arg1 = {2, 3, 4, 5, 6, 7, 8, 9};
   int64_t expected = 240;
 
   auto arg0Encrypted =
